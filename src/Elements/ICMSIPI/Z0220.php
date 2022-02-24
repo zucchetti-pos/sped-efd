@@ -56,7 +56,7 @@ class Z0220 extends Element implements ElementInterface
         'COD_BARRA' => [
             'type'     => 'string',
             'regex'    => '^(SEM GTIN)|([0-9]{8,14}|\-)$',
-            'required' => true,
+            'required' => false,
             'info'     => 'Representação alfanumérico do código de barra do produto, se houver',
             'format'   => ''
         ]
