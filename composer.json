@@ -1,5 +1,5 @@
 {
-    "name": "nfephp-org/sped-efd",
+    "name": "compufour/sped-efd",
     "type": "library",
     "version": "2.0.1",
     "description": "API para geração dos arquivos para SPED EFD",
@@ -8,7 +8,7 @@
         "sped",
         "nfephp"
     ],
-    "homepage": "https://github.com/nfephp-org/sped-efd",
+    "homepage": "https://github.com/compufour/sped-efd",
     "license": [
         "GPL-3.0+",
         "LGPL-3.0+"
