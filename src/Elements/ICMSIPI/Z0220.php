@@ -52,6 +52,13 @@ class Z0220 extends Element implements ElementInterface
                 . '(multiplicar) a unidade a ser convertida na unidade adotada '
                 . 'no inventário.',
             'format'   => '15v6'
+        ],
+        'COD_BARRA' => [
+            'type'     => 'string',
+            'regex'    => '^(SEM GTIN)|([0-9]{8,14}|\-)$',
+            'required' => true,
+            'info'     => 'Representação alfanumérico do código de barra do produto, se houver',
+            'format'   => ''
         ]
     ];
     
