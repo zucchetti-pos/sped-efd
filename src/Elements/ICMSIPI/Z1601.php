@@ -18,7 +18,7 @@ class Z1601 extends Element implements ElementInterface
         'COD_PART_IP' => [
             'type'     => 'string',
             'regex'    => '^.{1,60}$',
-            'required' => true,
+            'required' => false,
             'info'     => 'Código do participante (campo 02 do Registro 0150):
             identificação da instituição que efetuou o pagamento',
             'format'   => ''
