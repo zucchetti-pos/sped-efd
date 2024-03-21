@@ -20,8 +20,8 @@ class C190 extends Element implements ElementInterface
 
     protected $parameters = [
         'CST_ICMS' => [
-            'type' => 'numeric',
-            'regex' => '^(\d{3})$',
+            'type' => 'string',
+            'regex' => '^.{0,3}$',
             'required' => true,
             'info' => 'Código da Situação Tributária',
             'format' => ''
