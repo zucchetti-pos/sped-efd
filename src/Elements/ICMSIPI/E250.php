@@ -101,7 +101,7 @@ class E250 extends Element implements ElementInterface
          * estar preenchidos. Se este campo não estiver preenchido, os campos IND_PROC e PROC não deverão estar
          * preenchidos.
          */
-        if (!empty($this->std->num_proc) && (empty($this->std->ind_proc) || empty($this->std->proc))) {
+        if (!empty($this->std->num_proc) && (($this->std->ind_proc != '0' && empty($this->std->ind_proc)) || empty($this->std->proc))) {
             throw new \InvalidArgumentException("[" . self::REG . "] Se o campo NUM_PROC estiver preenchido, "
                 . "os campos IND_PROC e PROC deverão estar preenchidos." . $this->std->ind_proc);
         }
