@@ -14,8 +14,8 @@ class E116 extends Element implements ElementInterface
 
     protected $parameters = [
         'COD_OR' => [
-            'type'     => 'string',
-            'regex'    => '^[000|003|004|005|006|090]+$',
+            'type' => 'string',
+            'regex' => '^[000|001|002|003|004|005|006|090|999]+$',
             'required' => true,
             'info'     => 'Código da obrigação a recolher, conforme a Tabela 5.4',
             'format'   => ''
