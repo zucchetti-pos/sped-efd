@@ -100,9 +100,9 @@ class E116 extends Element implements ElementInterface
          * Campo 06 (NUM_PROC) Validação: se este campo estiver preenchido, os campos
          * IND_PROC e PROC também devem estar preenchidos.
          */
-        if (!empty($this->std->num_proc) && (empty($this->std->ind_proc) || empty($this->std->proc))) {
+        if (!empty($this->std->num_proc) && (($this->std->ind_proc != '0' && empty($this->std->ind_proc)) || empty($this->std->proc))) {
             throw new \InvalidArgumentException("[" . self::REG . "] Se o campo NUM_PROC estiver preenchido, "
-                . "os campos IND_PROC e PROC também devem estar preenchidos." . $this->std->num_proc);
+                . "os campos IND_PROC e PROC também devem estar preenchidos.");
         }
     }
 }
