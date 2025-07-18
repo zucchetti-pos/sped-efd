@@ -14,72 +14,72 @@ class E116 extends Element implements ElementInterface
 
     protected $parameters = [
         'COD_OR' => [
-            'type'     => 'string',
-            'regex'    => '^[000|003|004|005|006|090]+$',
+            'type' => 'string',
+            'regex' => '^[000|001|002|003|004|005|006|090|999]+$',
             'required' => true,
-            'info'     => 'Código da obrigação a recolher, conforme a Tabela 5.4',
-            'format'   => ''
+            'info' => 'Código da obrigação a recolher, conforme a Tabela 5.4',
+            'format' => ''
         ],
         'VL_OR' => [
-            'type'     => 'numeric',
-            'regex'    => '^\d+(\.\d*)?|\.\d+$',
+            'type' => 'numeric',
+            'regex' => '^\d+(\.\d*)?|\.\d+$',
             'required' => true,
-            'info'     => 'Valor da obrigação a recolher',
-            'format'   => '15v2'
+            'info' => 'Valor da obrigação a recolher',
+            'format' => '15v2'
         ],
         'DT_VCTO' => [
-            'type'     => 'numeric',
-            'regex'    => '^(0[1-9]|[1-2][0-9]|31(?!(?:0[2469]|11))|30(?!02))(0[1-9]|1[0-2])([12]\d{3})$',
+            'type' => 'numeric',
+            'regex' => '^(0[1-9]|[1-2][0-9]|31(?!(?:0[2469]|11))|30(?!02))(0[1-9]|1[0-2])([12]\d{3})$',
             'required' => true,
-            'info'     => 'Data de vencimento da obrigação',
-            'format'   => ''
+            'info' => 'Data de vencimento da obrigação',
+            'format' => ''
         ],
         'COD_REC' => [
-            'type'     => 'string',
-            'regex'    => '^.*$',
+            'type' => 'string',
+            'regex' => '^.*$',
             'required' => true,
-            'info'     => 'Código de receita referente à obrigação, próprio '
-            .'da unidade da federação, conforme legislação estadual.',
-            'format'   => ''
+            'info' => 'Código de receita referente à obrigação, próprio '
+                . 'da unidade da federação, conforme legislação estadual.',
+            'format' => ''
         ],
         'NUM_PROC' => [
-            'type'     => 'string',
-            'regex'    => '^.{1,15}$',
+            'type' => 'string',
+            'regex' => '^.{1,15}$',
             'required' => false,
-            'info'     => 'Número do processo ou auto de infração ao qual a obrigação está vinculada, se houver.',
-            'format'   => ''
+            'info' => 'Número do processo ou auto de infração ao qual a obrigação está vinculada, se houver.',
+            'format' => ''
         ],
         'IND_PROC' => [
-            'type'     => 'string',
-            'regex'    => '^[0|1|2|9]$',
+            'type' => 'string',
+            'regex' => '^[0|1|2|9]$',
             'required' => false,
-            'info'     => 'Indicador da origem do processo: '
-            .'0- SEFAZ;'
-            .'1- Justiça Federal;'
-            .'2- Justiça Estadual;'
-            .'9- Outros',
-            'format'   => ''
+            'info' => 'Indicador da origem do processo: '
+                . '0- SEFAZ;'
+                . '1- Justiça Federal;'
+                . '2- Justiça Estadual;'
+                . '9- Outros',
+            'format' => ''
         ],
         'PROC' => [
-            'type'     => 'string',
-            'regex'    => '^.*$',
+            'type' => 'string',
+            'regex' => '^.*$',
             'required' => false,
-            'info'     => 'Descrição resumida do processo que embasou o lançamento',
-            'format'   => ''
+            'info' => 'Descrição resumida do processo que embasou o lançamento',
+            'format' => ''
         ],
         'TXT_COMPL' => [
-            'type'     => 'string',
-            'regex'    => '^.*$',
+            'type' => 'string',
+            'regex' => '^.*$',
             'required' => false,
-            'info'     => 'Descrição complementar das obrigações a recolher.',
-            'format'   => ''
+            'info' => 'Descrição complementar das obrigações a recolher.',
+            'format' => ''
         ],
         'MES_REF' => [
-            'type'     => 'numeric',
-            'regex'    => '^((?!(13^))|30(?!02))(0[1-9]|1[0-2])([12]\d{3})$',
+            'type' => 'numeric',
+            'regex' => '^((?!(13^))|30(?!02))(0[1-9]|1[0-2])([12]\d{3})$',
             'required' => true,
-            'info'     => 'Informe o mês de referência no formato “mmaaaa”',
-            'format'   => ''
+            'info' => 'Informe o mês de referência no formato “mmaaaa”',
+            'format' => ''
         ]
     ];
 
@@ -100,9 +100,9 @@ class E116 extends Element implements ElementInterface
          * Campo 06 (NUM_PROC) Validação: se este campo estiver preenchido, os campos
          * IND_PROC e PROC também devem estar preenchidos.
          */
-        if (!empty($this->std->num_proc) && (empty($this->std->ind_proc) || empty($this->std->proc))) {
+        if (!empty($this->std->num_proc) && (($this->std->ind_proc != '0' && empty($this->std->ind_proc)) || empty($this->std->proc))) {
             throw new \InvalidArgumentException("[" . self::REG . "] Se o campo NUM_PROC estiver preenchido, "
-            ."os campos IND_PROC e PROC também devem estar preenchidos.");
+                . "os campos IND_PROC e PROC também devem estar preenchidos.");
         }
     }
 }

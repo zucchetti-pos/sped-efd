@@ -48,8 +48,8 @@ class H005 extends Element implements ElementInterface
             'format'   => '15v2'
         ],
         'MOT_INV' => [
-            'type'     => 'string',
-            'regex'    => '^(0[1-5]{1})$',
+            'type' => 'string',
+            'regex' => '^(0[1-6]{1})$',
             'required' => true,
             'info'     => 'Informe o motivo do Inventário: '
             . '01 – No final no período; '
