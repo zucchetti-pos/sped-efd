@@ -36,7 +36,7 @@ class Z0150 extends Element implements ElementInterface
         ],
         'CNPJ' => [
             'type' => 'string',
-            'regex' => '^[0-9]{14}$',
+            'regex' => '^[0-9A-Z]{14}$',
             'required' => false,
             'info' => 'CNPJ do participante.',
             'format' => ''

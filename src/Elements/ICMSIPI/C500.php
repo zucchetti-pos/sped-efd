@@ -196,8 +196,8 @@ class C500 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHV_DOCe' => [
-            'type' => 'numeric',
-            'regex' => '^[0-9]{44}$',
+            'type' => 'string',
+            'regex' => '^[0-9A-Z]{44}$',
             'required' => false,
             'info'     => 'Chave da Nota Fiscal de Energia Elétrica Eletrônica',
             'format'   => ''
@@ -213,8 +213,8 @@ class C500 extends Element implements ElementInterface
             'format'   => ''
         ],
         'CHV_DOCe_REF' => [
-            'type' => 'numeric',
-            'regex' => '^[0-9]{44}$',
+            'type' => 'string',
+            'regex' => '^[0-9A-Z]{44}$',
             'required' => false,
             'info'     => 'Chave da nota referenciada, substituída.',
             'format'   => ''

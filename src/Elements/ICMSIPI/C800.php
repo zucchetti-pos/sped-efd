@@ -69,7 +69,7 @@ class C800 extends Element implements ElementInterface
         ],
         'CNPJ_CPF' => [
             'type' => 'string',
-            'regex' => '^([0-9]{11}|[0-9]{14})$',
+            'regex' => '^([0-9]{11}|[0-9A-Z]{14})$',
             'required' => false,
             'info' => 'CNPJ ou CPF do destinatário',
             'format' => ''
@@ -82,8 +82,8 @@ class C800 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHV_CFE' => [
-            'type' => 'numeric',
-            'regex' => '^([0-9]{44})?$',
+            'type' => 'string',
+            'regex' => '^([0-9A-Z]{44})?$',
             'required' => true,
             'info' => 'Chave do Cupom Fiscal Eletrônico',
             'format' => ''

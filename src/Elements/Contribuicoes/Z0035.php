@@ -14,8 +14,8 @@ class Z0035 extends Element implements ElementInterface
 
     protected $parameters = [
         'COD_SCP' => [
-            'type' => 'numeric',
-            'regex' => '^(\d{14})$',
+            'type' => 'string',
+            'regex' => '^[0-9A-Z]{14}$',
             'required' => false,
             'info' => 'Identificação da SCP',
             'format' => ''

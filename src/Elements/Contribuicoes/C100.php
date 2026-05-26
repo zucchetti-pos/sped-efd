@@ -32,7 +32,7 @@ class C100 extends Element implements ElementInterface
             'type' => 'string',
             'regex' => '^.{0,60}$',
             'required' => false,
-            'info' => 'Código do participante (campo 02 do Registro 0150): - do emitente do documento ou 
+            'info' => 'Código do participante (campo 02 do Registro 0150): - do emitente do documento ou
             do remetente das mercadorias, no caso de entradas; - do adquirente, no caso de saídas',
             'format' => ''
         ],
@@ -65,8 +65,8 @@ class C100 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHV_NFE' => [
-            'type' => 'numeric',
-            'regex' => '^([0-9]{44})?$',
+            'type' => 'string',
+            'regex' => '^([0-9A-Z]{44})?$',
             'required' => false,
             'info' => 'Chave da Nota Fiscal Eletrônica ou da NFC-e',
             'format' => ''
@@ -124,10 +124,10 @@ class C100 extends Element implements ElementInterface
             'type' => 'string',
             'regex' => '^(0|1|2|3|4|9)$',
             'required' => false,
-            'info' => 'Indicador do tipo do frete: 
+            'info' => 'Indicador do tipo do frete:
             0- Por conta de terceiros;
-            1- Por conta do emitente; 
-            2- Por conta do destinatário; 
+            1- Por conta do emitente;
+            2- Por conta do destinatário;
             9- Sem cobrança de frete.',
             'format' => ''
         ],

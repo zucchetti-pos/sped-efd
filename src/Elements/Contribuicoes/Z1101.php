@@ -64,8 +64,8 @@ class Z1101 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHV_NFE' => [
-            'type' => 'numeric',
-            'regex' => '^([0-9]{44})?$',
+            'type' => 'string',
+            'regex' => '^([0-9A-Z]{44})?$',
             'required' => false,
             'info' => 'Chave da Nota Fiscal Eletrônica ',
             'format' => ''
@@ -159,7 +159,7 @@ class Z1101 extends Element implements ElementInterface
         ],
         'CNPJ' => [
             'type' => 'string',
-            'regex' => '^[0-9]{14}$',
+            'regex' => '^[0-9A-Z]{14}$',
             'required' => false,
             'info' => 'CNPJ do estabelecimento gerador do crédito extemporâneo (Campo 04 do Registro 0140) ',
             'format' => ''

@@ -18,8 +18,8 @@ class E113 extends Element implements ElementInterface
             'regex'    => '^.{1,60}$',
             'required' => true,
             'info'     => 'Código do participante (campo 02 do Registro 0150):'
-            .'- do emitente do documento ou do remetente das mercadorias, no caso de entradas;'
-            .'- do adquirente, no caso de saídas',
+                . '- do emitente do documento ou do remetente das mercadorias, no caso de entradas;'
+                . '- do adquirente, no caso de saídas',
             'format'   => ''
         ],
         'COD_MOD' => [
@@ -54,7 +54,7 @@ class E113 extends Element implements ElementInterface
             'type'     => 'integer',
             'regex'    => '^(0[1-9]|[1-2][0-9]|31(?!(?:0[2469]|11))|30(?!02))(0[1-9]|1[0-2])([12]\d{3})$',
             'required' => true,
-            'info'     => 'Data da emissão do documento fiscal'                  ,
+            'info'     => 'Data da emissão do documento fiscal',
             'format'   => ''
         ],
         'COD_ITEM' => [
@@ -71,9 +71,9 @@ class E113 extends Element implements ElementInterface
             'info'     => 'Valor do ajuste para a operação/item',
             'format'   => '15v2'
         ],
-        'CHV_DOCE' => [ // CHV_DOCe
+        'CHV_DOCE' => [
             'type'     => 'string',
-            'regex'    => '^\d{44}$',
+            'regex'    => '^[0-9A-Z]{44}$',
             'required' => false,
             'info'     => 'Chave do Documento Eletrônico',
             'format'   => ''

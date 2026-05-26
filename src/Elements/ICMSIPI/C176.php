@@ -78,8 +78,8 @@ class C176 extends Element implements ElementInterface
             'format' => '15v2'
         ],
         'CHAVE_NFE_ULT_E' => [
-            'type' => 'numeric',
-            'regex' => '^([0-9]{44})?$',
+            'type' => 'string',
+            'regex' => '^([0-9A-Z]{44})?$',
             'required' => false,
             'info' => 'Número completo da chave da NFe relativo à última entrada',
             'format' => ''
@@ -95,7 +95,7 @@ class C176 extends Element implements ElementInterface
             'type' => 'numeric',
             'regex' => '^\d+(\.\d*)?|\.\d+$',
             'required' => false,
-            'info' => 'Valor unitário da base de cálculo da operação própria do remetente 
+            'info' => 'Valor unitário da base de cálculo da operação própria do remetente
             sob o regime comum de tributação',
             'format' => '15v2'
         ],
@@ -149,8 +149,8 @@ class C176 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHAVE_NFE_RET' => [
-            'type' => 'numeric',
-            'regex' => '^([0-9]{44})?$',
+            'type' => 'string',
+            'regex' => '^([0-9A-Z]{44})?$',
             'required' => false,
             'info' => 'Número completo da chave da NF-e emitida pelo substituto',
             'format' => ''

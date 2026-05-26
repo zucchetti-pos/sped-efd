@@ -18,17 +18,17 @@ class D161 extends Element implements ElementInterface
             'regex'    => '',
             'required' => true,
             'info'     => 'Indicador do tipo de transporte da carga coletada: 0 - Rodoviário'
-            . '1 - Ferroviário'
-            . '2 - Rodo-Ferroviário'
-            . '3 - Aquaviário'
-            . '4 - Dutoviário'
-            . '5 - Aéreo'
-            . '9 - Outros',
+                . '1 - Ferroviário'
+                . '2 - Rodo-Ferroviário'
+                . '3 - Aquaviário'
+                . '4 - Dutoviário'
+                . '5 - Aéreo'
+                . '9 - Outros',
             'format'   => ''
         ],
         'CNPJ_CPF_COL' => [
             'type'     => 'string',
-            'regex'    => '^[0-9]{14}$',
+            'regex'    => '^[0-9A-Z]{14}$',
             'required' => true,
             'info'     => 'Número do CNPJ ou CPF do local da coleta',
             'format'   => ''
@@ -49,7 +49,7 @@ class D161 extends Element implements ElementInterface
         ],
         'CNPJ_CPF_ENTG' => [
             'type'     => 'string',
-            'regex'    => '^[0-9]{14}$',
+            'regex'    => '^[0-9A-Z]{14}$',
             'required' => true,
             'info'     => 'Número do CNPJ ou CPF do local da entrega',
             'format'   => ''
