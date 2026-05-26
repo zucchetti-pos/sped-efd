@@ -54,8 +54,8 @@ class G130 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHV_NFE_CTE' => [
-            'type' => 'numeric',
-            'regex' => '^([0-9]{44})?$',
+            'type' => 'string',
+            'regex' => '^([0-9A-Z]{44})?$',
             'required' => false,
             'info' => 'Chave do documento fiscal eletrônico ',
             'format' => ''

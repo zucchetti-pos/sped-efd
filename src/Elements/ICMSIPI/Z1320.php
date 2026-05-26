@@ -42,8 +42,8 @@ class Z1320 extends Element implements ElementInterface
             'format'   => ''
         ],
         'CNPJ_INTERV' => [
-            'type'     => 'integer',
-            'regex'    => '^[0-9]{14}$',
+            'type'     => 'string',
+            'regex'    => '^[0-9A-Z]{14}$',
             'required' => false,
             'info'     => 'CNPJ da empresa responsável pela intervenção',
             'format'   => ''

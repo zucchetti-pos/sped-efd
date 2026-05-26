@@ -72,8 +72,8 @@ class E531 extends Element implements ElementInterface
             'format'   => '15v2'
         ],
         'CHV_NFE' => [
-            'type'     => 'numeric',
-            'regex'    => '^([0-9]{44})?$',
+            'type'     => 'string',
+            'regex'    => '^([0-9A-Z]{44})?$',
             'required' => false,
             'info'     => 'Chave da Nota Fiscal Eletrônica (modelo 55)',
             'format'   => ''

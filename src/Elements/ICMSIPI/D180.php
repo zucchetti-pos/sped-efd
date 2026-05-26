@@ -25,12 +25,12 @@ class D180 extends Element implements ElementInterface
             'regex'    => '^[0-9]{0}$',
             'required' => true,
             'info'     => 'Indicador do emitente do documento fiscal: 0 - Emissão própria'
-            . '1 - Terceiros',
+                . '1 - Terceiros',
             'format'   => ''
         ],
         'CNPJ_CPF_EMIT' => [
-            'type'     => 'numeric',
-            'regex'    => '^[0-9]{14}$',
+            'type'     => 'string',
+            'regex'    => '^[0-9A-Z]{14}$',
             'required' => true,
             'info'     => 'CNPJ ou CPF do participante emitente do modal',
             'format'   => ''
@@ -57,8 +57,8 @@ class D180 extends Element implements ElementInterface
             'format'   => ''
         ],
         'CNPJ_CPF_TOM' => [
-            'type'     => 'numeric',
-            'regex'    => '^[0-9]{14}$',
+            'type'     => 'string',
+            'regex'    => '^[0-9A-Z]{14}$',
             'required' => true,
             'info'     => 'CNPJ/CPF do participante tomador do serviço',
             'format'   => ''

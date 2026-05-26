@@ -29,7 +29,7 @@ class Z0140 extends Element implements ElementInterface
         ],
         'CNPJ' => [
             'type' => 'string',
-            'regex' => '^[0-9]{14}$',
+            'regex' => '^[0-9A-Z]{14}$',
             'required' => false,
             'info' => 'Número de inscrição do estabelecimento no CNPJ.',
             'format' => ''

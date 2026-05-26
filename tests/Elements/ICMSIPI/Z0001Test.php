@@ -1,6 +1,6 @@
 <?php
 
-namespace NFePHP\EFD\Tests;
+namespace NFePHP\EFD\Tests\Elements\ICMSIPI;
 
 use NFePHP\EFD\Elements\ICMSIPI\Z0001;
 use PHPUnit\Framework\TestCase;
@@ -12,7 +12,9 @@ class Z0001Test extends TestCase
     {
         $std = new stdClass();
         $std->ind_mov = 1;
+
         $b1 = new Z0001($std);
+
         $resp = "{$b1}";
         $expected = '|0001|1|';
         $this->assertEquals($expected, $resp);
@@ -24,6 +26,7 @@ class Z0001Test extends TestCase
 
         $std = new stdClass();
         $std->ind_mov = 'A';
+
         new Z0001($std);
     }
 
@@ -33,6 +36,7 @@ class Z0001Test extends TestCase
 
         $std = new stdClass();
         $std->ind_mov = 2;
+
         new Z0001($std);
     }
 }

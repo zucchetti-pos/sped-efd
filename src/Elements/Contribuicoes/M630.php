@@ -15,7 +15,7 @@ class M630 extends Element implements ElementInterface
     protected $parameters = [
         'CNPJ' => [
             'type' => 'string',
-            'regex' => '^[0-9]{14}$',
+            'regex' => '^[0-9A-Z]{14}$',
             'required' => false,
             'info' => 'CNPJ da pessoa jurídica de direito público, empresa pública, sociedade de economia ' .
                 'mista ou suas subsidiárias. ',

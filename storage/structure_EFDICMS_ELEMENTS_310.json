@@ -106,12 +106,12 @@
     },
     "CHAVE_NFE_RET": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CHAVE_NFE_ULT_E": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CHC_EMB": {
@@ -121,7 +121,7 @@
     },
     "CHV_CFE": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CHV_COD_DIG": {
@@ -131,27 +131,27 @@
     },
     "CHV_CTE": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CHV_CTE_REF": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CHV_DOCE": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CHV_NFE": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CHV_NFE_CTE": {
         "type": "string",
-        "regex": "^(\\d{44})$",
+        "regex": "^[0-9A-Z]{44}$",
         "format": ""
     },
     "CL_ENQ": {
@@ -161,57 +161,57 @@
     },
     "CNPJ": {
         "type": "string",
-        "regex": "^[0-9]{14}$",
+        "regex": "^[0-9A-Z]{14}$",
         "format": ""
     },
     "CNPJ_COL": {
         "type": "string",
-        "regex": "^[0-9]{14}$",
+        "regex": "^[0-9A-Z]{14}$",
         "format": ""
     },
     "CNPJ_CPF": {
         "type": "string",
-        "regex": "^[0-9]{11,14}$",
+        "regex": "^([0-9]{11}|[0-9A-Z]{14})$",
         "format": ""
     },
     "CNPJ_CPF_COL": {
         "type": "string",
-        "regex": "^[0-9]{11,14}$",
+        "regex": "^([0-9]{11}|[0-9A-Z]{14})$",
         "format": ""
     },
     "CNPJ_CPF_DEST": {
         "type": "string",
-        "regex": "^[0-9]{11,14}$",
+        "regex": "^([0-9]{11}|[0-9A-Z]{14})$",
         "format": ""
     },
     "CNPJ_CPF_EMIT": {
         "type": "string",
-        "regex": "^[0-9]{11,14}$",
+        "regex": "^([0-9]{11}|[0-9A-Z]{14})$",
         "format": ""
     },
     "CNPJ_CPF_ENTG": {
         "type": "string",
-        "regex": "^[0-9]{11,14}$",
+        "regex": "^([0-9]{11}|[0-9A-Z]{14})$",
         "format": ""
     },
     "CNPJ_CPF_REM": {
         "type": "string",
-        "regex": "^[0-9]{11,14}$",
+        "regex": "^([0-9]{11}|[0-9A-Z]{14})$",
         "format": ""
     },
     "CNPJ_CPF_TOM": {
         "type": "string",
-        "regex": "^[0-9]{11,14}$",
+        "regex": "^([0-9]{11}|[0-9A-Z]{14})$",
         "format": ""
     },
     "CNPJ_ENTG": {
         "type": "string",
-        "regex": "^[0-9]{14}$",
+        "regex": "^[0-9A-Z]{14}$",
         "format": ""
     },
     "CNPJ_INTERV": {
         "type": "string",
-        "regex": "^[0-9]{14}$",
+        "regex": "^[0-9A-Z]{14}$",
         "format": ""
     },
     "COD_AJ": {

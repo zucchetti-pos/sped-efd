@@ -15,7 +15,7 @@ class C195 extends Element implements ElementInterface
     protected $parameters = [
         'CNPJ_CPF_PART' => [
             'type' => 'string',
-            'regex' => '^[0-9]{14}$',
+            'regex' => '^[0-9A-Z]{14}$',
             'required' => false,
             'info' => 'CNPJ/CPF do Participante a que se referem as operações consolidadas 
             neste registro (pessoa jurídica ou pessoa física vendedora/remetente)',

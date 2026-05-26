@@ -73,7 +73,7 @@ class Z1923 extends Element implements ElementInterface
         ],
         'CHV_DOCE' => [
             'type'     => 'string',
-            'regex'    => '^\d{44}$',
+            'regex'    => '^[0-9A-Z]{44}$',
             'required' => false,
             'info'     => 'Chave do Documento Eletrônico',
             'format'   => ''

@@ -15,8 +15,8 @@ class C465 extends Element implements ElementInterface
 
     protected $parameters = [
         'CHV_CFE' => [
-            'type' => 'numeric',
-            'regex' => '^([0-9]{44})?$',
+            'type' => 'string',
+            'regex' => '^([0-9A-Z]{44})?$',
             'required' => true,
             'info' => 'Chave do Cupom Fiscal Eletrônico',
             'format' => ''

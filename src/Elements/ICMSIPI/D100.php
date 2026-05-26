@@ -84,8 +84,8 @@ class D100 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHV_CTE' => [
-            'type' => 'numeric',
-            'regex' => '^[0-9]{44}$',
+            'type' => 'string',
+            'regex' => '^[0-9A-Z]{44}$',
             'required' => false,
             'info' => 'Chave do Conhecimento de Transporte Eletrônico ou do Bilhete de Passagem Eletrônico',
             'format' => ''
@@ -112,8 +112,8 @@ class D100 extends Element implements ElementInterface
             'format' => ''
         ],
         'CHV_CTE_REF' => [
-            'type' => 'numeric',
-            'regex' => '^[0-9]{44}$',
+            'type' => 'string',
+            'regex' => '^[0-9A-Z]{44}$',
             'required' => false,
             'info' => 'Chave do CT-e de referência',
             'format' => ''
