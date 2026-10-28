@@ -29,8 +29,8 @@ class K230 extends Element implements ElementInterface
         ],
         'COD_DOC_OP' => [
             'type'     => 'string',
-            'regex'    => '^.{1,60}$',
-            'required' => true,
+            'regex'    => '^.{1,30}$',
+            'required' => false,
             'info'     => 'Código de identificação da ordem de produção',
             'format'   => ''
         ],
